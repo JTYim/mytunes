@@ -19,7 +19,7 @@ describe('SongQueue', function() {
     SongQueue.prototype.playFirst.restore();
   });
 
-  describe('when a song is added', function() {
+  xdescribe('when a song is added', function() {
     describe('when it is the only song in the song queue', function() {
       xit('plays it', function() {
         var songQueue = new SongQueue();
@@ -28,7 +28,7 @@ describe('SongQueue', function() {
       });
     });
 
-    describe('when it is not the only song in the song queue', function() {
+  xdescribe('when it is not the only song in the song queue', function() {
       xit('does nothing', function() {
         var songQueue = new SongQueue(songData1);
         songQueue.add(songData2);
