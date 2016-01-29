@@ -3,8 +3,16 @@ var SongQueue = Songs.extend({
 
   initialize: function(){
     // this.trigger('enqueue', this)
+    this.on('enqueue', function(x){
+      this.play();  
+    }),
+    this.on('dequeue', function(x){
+      this.play();  
+    })
   },
-
+  playFirst: function(x){
+    this.at(x).play();
+  },
 
 
 });
